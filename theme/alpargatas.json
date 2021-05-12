@@ -7,7 +7,8 @@
       "shape": "Pipe",
       "stroke": "#32d4f5",
       "color": "#32d4f5",
-      "icon": "https://static.structurizr.com/themes/microsoft-azure-2020.07.13/10042-icon-service-API-Management-Services.png"
+      "icon": "https://static.structurizr.com/themes/microsoft-azure-2020.07.13/10836-icon-service-Service-Bus.png"
+  
     },
     {
       "tag": "Report",
@@ -27,7 +28,8 @@
     },
     {
       "tag": "Proxy",
-      "shape": "Hexagon"
+      "shape": "Hexagon",
+      "icon":"https://static.structurizr.com/themes/microsoft-azure-2020.07.13/10042-icon-service-API-Management-Services.png"
 
     },
     {
