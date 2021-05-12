@@ -32,16 +32,34 @@
   ],
   "relationships": [
     {
-      "tag": "Relationship",
-      "routing": "Orthogonal"
+      "tag": "Sincrono",
+      "dashed": false,
+      "routing" :"direct"
     },
     {
-      "tag": "Asynchronous",
-      "dashed": true
+      "tag": "Assincrono",
+      "dashed": true,
+      "routing" :"curved"
     },
     {
-      "tag": "Synchronous",
-      "dashed": false
+      "tag": "Seguro",
+      "color": "#99FF00"
+      
+    },
+    {
+      "tag": "Inseguro",
+      "color": "#0022FF"
+
+    },
+    {
+      "tag": "Risco",
+      "fontSize":"30",
+      "color": "#FF2222"
+
+    },
+    {
+      "tag": "Monitorado",
+      "thickness": 5
     }
   ]
 }
