@@ -31,5 +31,11 @@
     }
   ],
   "relationships": [
+
+
+    {
+      "tag": "Monitorado",
+      "thickness": 5
+    }
   ]
 }
