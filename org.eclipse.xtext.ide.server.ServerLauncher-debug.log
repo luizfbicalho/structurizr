@@ -74862,3 +74862,22 @@ Params: {
 }
 
 
+[Trace - 01:42:50 PM] Received notification 'textDocument/didSave'
+Params: {
+  "textDocument": {
+    "uri": "file:///c%3A/ProjetosGIT/github/structurizr/dsl/b2b.dsl"
+  }
+}
+
+
+[Trace - 01:42:50 PM] Received notification 'workspace/didChangeWatchedFiles'
+Params: {
+  "changes": [
+    {
+      "uri": "file:///c%3A/ProjetosGIT/github/structurizr/dsl/b2b.dsl",
+      "type": 2
+    }
+  ]
+}
+
+
