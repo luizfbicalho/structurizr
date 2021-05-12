@@ -11,12 +11,14 @@
     },
     {
       "tag": "Report",
-      "shape": "RoundedBox"
+      "shape": "RoundedBox",
+      "icon":"https://static.structurizr.com/themes/microsoft-azure-2020.07.13/00006-icon-service-Blueprints.png"
 
     },
     {
       "tag": "Form",
-      "shape": "Box"
+      "shape": "Box",
+      "icon":"https://static.structurizr.com/themes/microsoft-azure-2020.07.13/10853-icon-service-Backlog.png"
 
     },
     {
@@ -67,7 +69,8 @@
 
     {
       "tag": "Database",
-      "shape": "Cylinder"
+      "shape": "Cylinder",
+      "icon":"https://static.structurizr.com/themes/microsoft-azure-2020.07.13/10135-icon-service-Managed-Database.png"
 
     }
   ],
