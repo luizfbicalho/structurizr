@@ -1,6 +1,6 @@
 {
-  "name": "Alpargatas",
-  "description": "Theme para usar nos workspaces da Alpargatas.",
+  "name": "Microservices example",
+  "description": "An example of a microservices architecture, which includes asynchronous and parallel behaviour.",
   "elements": [
     {
       "tag": "ESB",
@@ -71,59 +71,36 @@
 
     }
   ],
-  "elementTemplate": {
-    "tag": "",
-    "shape": " <Box|RoundedBox|Circle|Ellipse|Hexagon|Cylinder|Pipe|Person|Robot|Folder|WebBrowser|MobileDevicePortrait|MobileDeviceLandscape|Component>",
-    "icon": " <file>",
-    "width": " <integer>",
-    "height": " <integer>",
-    "background": " <#rrggbb>",
-    "color": " <#rrggbb>",
-    "stroke": " <#rrggbb>",
-    "fontSize": " <integer>",
-    "border": " <solid|dashed|dotted>",
-    "opacity": " <integer: 0-100>",
-    "metadata": "<true|false>",
-    "description": "<true|false>"
-  },
   "relationships": [
     {
       "tag": "Sincrono",
       "dashed": false,
-      "routing": "Direct"
+      "routing" :"Direct"
     },
     {
       "tag": "Assincrono",
       "dashed": true,
-      "routing": "Curved"
+      "routing" :"Curved"
     },
     {
       "tag": "Seguro",
       "color": "#99FF00"
+      
     },
     {
       "tag": "Inseguro",
       "color": "#0022FF"
+
     },
     {
       "tag": "Risco",
-      "fontSize": "30",
+      "fontSize":"30",
       "color": "#FF2222"
+
     },
     {
       "tag": "Monitorado",
       "thickness": 5
     }
-  ],
-  "relationshipTemplate": {
-    "tag": "Template",
-    "position": "0-100",
-    "opacity": "0-100",
-    "dashed": "true|false",
-    "fontSize": "number",
-    "routing": "<direct|orthogonal|curved>",
-    "color": "<#rrggbb>",
-    "thickness": "<number>",
-    "width": "number"
-  }
+  ]
 }
