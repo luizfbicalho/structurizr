@@ -31,15 +31,31 @@
     }
   ],
   "relationships": [
-
+    {
+      "tag": "Sincrono",
+      "dashed": false,
+      "routing" :"Direct"
+    },
+    {
+      "tag": "Assincrono",
+      "dashed": true,
+      "routing" :"Curved"
+    },
+    {
+      "tag": "Seguro",
+      "color": "#99FF00"
+      
+    },
     {
       "tag": "Inseguro",
       "color": "#0022FF"
+
     },
     {
       "tag": "Risco",
-      "fontSize": 30,
+      "fontSize":"30",
       "color": "#FF2222"
+
     },
     {
       "tag": "Monitorado",

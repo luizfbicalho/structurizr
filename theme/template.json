@@ -32,12 +32,12 @@
       {
         "tag": "Sincrono",
         "dashed": false,
-        "routing" :"direct"
+        "routing" :"Direct"
       },
       {
         "tag": "Assincrono",
         "dashed": true,
-        "routing" :"curved"
+        "routing" :"Curved"
       },
       {
         "tag": "Seguro",
