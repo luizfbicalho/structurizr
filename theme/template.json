@@ -70,6 +70,11 @@
       "shape": "Cylinder"
 
     }
+    ,    {
+      "tag": "Component",
+      "shape": "Component"
+
+    }
   ],
   "elementTemplate": {
     "tag": "",
