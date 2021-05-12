@@ -32,7 +32,15 @@
   ],
   "relationships": [
 
-
+    {
+      "tag": "Inseguro",
+      "color": "#0022FF"
+    },
+    {
+      "tag": "Risco",
+      "fontSize": 30,
+      "color": "#FF2222"
+    },
     {
       "tag": "Monitorado",
       "thickness": 5
