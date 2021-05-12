@@ -104,6 +104,7 @@ workspace "B2B" "Processo B2B" {
             autoLayout
         }
         
+
        styles {
             element "Person" {
                 color #ffffff
@@ -111,13 +112,6 @@ workspace "B2B" "Processo B2B" {
                 shape Person
                 background #999999
             }
-/*            element "Customer" {
-                background #08427b
-            }
-            element "Bank Staff" {
-                background #999999
-            }
-            */
             element "Software System" {
                 background #1168bd
                 color #ffffff
@@ -133,13 +127,7 @@ workspace "B2B" "Processo B2B" {
             element "Web Browser" {
                 shape WebBrowser
             }
-            /*element "Mobile App" {
-                shape MobileDeviceLandscape
-            }
-            element "Database" {
-                shape Cylinder
-            }
-            */
+
             element "arquivo" {
                 shape Folder
             }
@@ -147,9 +135,7 @@ workspace "B2B" "Processo B2B" {
                 background #85bbf0
                 color #000000
             }
-            /*element "Failover" {
-                opacity 25
-            }*/
+
 
             relationship "Risk" {
                 thickness 2
@@ -158,6 +144,8 @@ workspace "B2B" "Processo B2B" {
                 dashed false
 
             }
-        }
+       }
+            themes "https://raw.githubusercontent.com/luizfbicalho/structurizr/master/theme/alpargatas.json"
+        
     }
 }
