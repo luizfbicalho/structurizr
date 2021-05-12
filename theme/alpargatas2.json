@@ -1,25 +1,47 @@
 {
-  "name": "Alpargatas",
-  "description": "Theme para usar nos workspaces da Alpargatas.",
+  "name": "Microservices example",
+  "description": "An example of a microservices architecture, which includes asynchronous and parallel behaviour.",
   "elements": [
     {
-      "tag": "ESB",
-      "shape": "Hexagon",
-      "stroke": "#32d4f5",
-      "color": "#32d4f5",
-      "icon": "https://static.structurizr.com/themes/microsoft-azure-2020.07.13/10042-icon-service-API-Management-Services.png"
+      "tag": "Element",
+      "color": "#000000"
+    },
+    {
+      "tag": "Person",
+      "background": "#ffbf00",
+      "shape": "Person"
+    },
+    {
+      "tag": "Container",
+      "background": "#facc2e"
+    },
+    {
+      "tag": "Message Bus",
+      "width": 1600,
+      "shape": "Pipe"
+    },
+    {
+      "tag": "Microservice",
+      "shape": "Hexagon"
+    },
+    {
+      "tag": "Database",
+      "background": "#f5da81",
+      "shape": "Cylinder"
     }
   ],
   "relationships": [
     {
-      "tag": "Sincrono",
-      "dashed": false,
-      "routing": "direct"
+      "tag": "Relationship",
+      "routing": "Orthogonal"
     },
     {
-      "tag": "Assincrono",
-      "dashed": true,
-      "routing": "curved"
+      "tag": "Asynchronous",
+      "dashed": true
+    },
+    {
+      "tag": "Synchronous",
+      "dashed": false
     }
   ]
 }
