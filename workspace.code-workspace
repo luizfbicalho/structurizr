@@ -6,7 +6,10 @@
 	],
 	"settings": {
 		"files.exclude": {
-			"**/plantuml-gen": true
+			"**/plantuml-gen": true,
+			"**/*.tmp": true,
+			".gitignore": true,
+			"org.eclipse.xtext.ide.server.ServerLauncher-debug.log": true
 		}
 	}
 }
