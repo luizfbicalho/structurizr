@@ -125,57 +125,7 @@ workspace "B2C" "Processo B2C" {
         }
         
        styles {
-            element "Person" {
-                color #ffffff
-                fontSize 22
-                shape Person
-                background #999999
-            }
-            /*element "Customer" {
-                background #08427b
-            }
-            element "Bank Staff" {
-                background #999999
-            }*/
-            element "Software System" {
-                background #1168bd
-                color #ffffff
-            }
-            element "Existing System" {
-                background #999999
-                color #ffffff
-            }
-            element "Container" {
-                background #438dd5
-                color #ffffff
-            }
-            element "Web Browser" {
-                shape WebBrowser
-            }
-            /*element "Mobile App" {
-                shape MobileDeviceLandscape
-            }
-            element "Database" {
-                shape Cylinder
-            }*/
-            element "arquivo" {
-                shape Folder
-            }
-            element "Component" {
-                background #85bbf0
-                color #000000
-            }
-            /*element "Failover" {
-                opacity 25
-            }*/
 
-            relationship "Risk" {
-                thickness 2
-                color #FF0000
-                colour #FF0000
-                dashed false
-
-            }
         }
             themes "https://raw.githubusercontent.com/luizfbicalho/structurizr/master/theme/alpargatas.json"
 

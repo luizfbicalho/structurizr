@@ -10,15 +10,15 @@ workspace "B2B" "Processo B2B" {
                 liberaCredito = container "Libera Crédito" "" "SAP RFC"
                 alocaRemessa = container "Aloca e Gera Remessa" "" "SAP RFC"
                 enviaRemessa = container "Envia Remessa" "" "SAP RFC"
-                nfCabFile = container "Arquivo NF Cab" "Arquivos CAB" "arquivo" "arquivo"
-                nfItmFile = container "Arquivo NF Itm" "Arquivos ITM" "arquivo" "arquivo"
+                nfCabFile = container "Arquivo NF Cab" "Arquivos CAB" "arquivo" "Arquivo"
+                nfItmFile = container "Arquivo NF Itm" "Arquivos ITM" "arquivo" "Arquivo"
 
                 recebeSolFat = container "Recebe Sol. FAT" "" "SAP RFC"
                 pickpackSmFat = container "PICK/PACK/SM/FAT" "" "SAP RFC"
                 geraNF = container "Gera Nota Fiscal" "" "SAP RFC"
                 enviaNF = container "Envia Doc. Fat./NF" "" "SAP RFC"
                 
-                nfPdfFile = container "Arquivo NF PDF" "Arquivos PDF" "arquivo" "arquivo"
+                nfPdfFile = container "Arquivo NF PDF" "Arquivos PDF" "arquivo" "Arquivo"
 
 
                 importaColeta = container "Importa Coleta" "" "SAP RFC"
@@ -27,7 +27,7 @@ workspace "B2B" "Processo B2B" {
                 group "GNFE-NF" {
                     validaNF = container "Valida Nota Fiscal" "" "SAP RFC"
                     enviaNFDir = container "Envia Nota Fiscal para Diretorio" "" "SAP RFC"
-                    nfDir = container "Diretorio NF" "Diretorio NF" "arquivo" "arquivo"
+                    nfDir = container "Diretorio NF" "Diretorio NF" "arquivo" "Arquivo"
                 }
             }
 
@@ -39,9 +39,9 @@ workspace "B2B" "Processo B2B" {
                 geraOnda = container "Gera Onda" "" "SAP RFC"
                 pickingPacking = container "Picking Packing" "" "SAP RFC"
                 solicitaFaturamento = container "Solicita Faturamento" "" "SAP RFC"
-                anfFile = container "Arquivo ANF" "Arquivos ANF" "arquivo" "arquivo"
-                adtFile = container "Arquivo ADT" "Arquivos ADT" "arquivo" "arquivo"
-                coletaFile = container "Arquivo ***" "Arquivos ***" "arquivo" "arquivo"
+                anfFile = container "Arquivo ANF" "Arquivos ANF" "arquivo" "Arquivo"
+                adtFile = container "Arquivo ADT" "Arquivos ADT" "arquivo" "Arquivo"
+                coletaFile = container "Arquivo ***" "Arquivos ***" "arquivo" "Arquivo"
 
                 despachoMercadoria = container "Despacho Mercadoria" "" "SAP RFC"
                 enviaColeta = container "Envia Coleta" "" "SAP RFC"
@@ -106,44 +106,7 @@ workspace "B2B" "Processo B2B" {
         
 
        styles {
-            element "Person" {
-                color #ffffff
-                fontSize 22
-                shape Person
-                background #999999
-            }
-            element "Software System" {
-                background #1168bd
-                color #ffffff
-            }
-            element "Existing System" {
-                background #999999
-                color #ffffff
-            }
-            element "Container" {
-                background #438dd5
-                color #ffffff
-            }
-            element "Web Browser" {
-                shape WebBrowser
-            }
 
-            element "arquivo" {
-                shape Folder
-            }
-            element "Component" {
-                background #85bbf0
-                color #000000
-            }
-
-
-            relationship "Risk" {
-                thickness 2
-                color #FF0000
-                colour #FF0000
-                dashed false
-
-            }
        }
             themes "https://raw.githubusercontent.com/luizfbicalho/structurizr/master/theme/alpargatas.json"
         
