@@ -138,33 +138,33 @@ workspace "Completo" "Processo B2B" {
             }
         }
 // b2b
-        geraPedido -> geraOV "" "Sincrono"
-        geraOV -> liberaCredito "" "Sincrono"
-        liberaCredito -> alocaRemessa "" "Sincrono"
-        alocaRemessa -> enviaRemessa "" "Sincrono"
+        geraPedido -> geraOV "" "" "Sincrono"
+        geraOV -> liberaCredito "" """Sincrono"
+        liberaCredito -> alocaRemessa "" """Sincrono"
+        alocaRemessa -> enviaRemessa "" "" "Sincrono"
         enviaRemessa -> nfCabFile "Geração de arquivo" "SFTP" "Risco,Assincrono"
         enviaRemessa -> nfItmFile "Geração de arquivo" "SFTP" "Risco,Assincrono"
         nfCabFile -> recebeRemessa "Importação de arquivo" "SFTP" "Risco,Assincrono"
         nfItmFile -> recebeRemessa "Importação de arquivo" "SFTP" "Risco,Assincrono"
-        recebeRemessa -> geraOnda "" "Sincrono"
-        geraOnda  -> pickingPacking "" "Sincrono"
+        recebeRemessa -> geraOnda "" "" "Sincrono"
+        geraOnda  -> pickingPacking "" "" "Sincrono"
         pickingPacking  -> solicitaFaturamento "" "Sincrono"
         solicitaFaturamento -> anfFile "Importação de arquivo" "SFTP" "Risco,Assincrono"
         solicitaFaturamento -> adtFile "Importação de arquivo" "SFTP" "Risco,Assincrono"
         solicitaFaturamento  ->  despachoMercadoria "" "SAP"
         anfFile -> recebeSolFat "Importação de arquivo" "SFTP" "Risco,Assincrono"
         adtFile -> recebeSolFat "Importação de arquivo" "SFTP" "Risco,Assincrono"
-        recebeSolFat -> pickpackSmFat "" "Sincrono"
-        pickpackSmFat -> geraNF "" "Sincrono"
-        geraNF -> enviaNF  "" "Sincrono"
-        geraNF -> validaNF "" "Sincrono"
+        recebeSolFat -> pickpackSmFat "" "" "Sincrono"
+        pickpackSmFat -> geraNF "" "" "Sincrono"
+        geraNF -> enviaNF  "" "" "Sincrono"
+        geraNF -> validaNF "" "" "Sincrono"
         enviaNF -> nfPdfFile "Geração de arquivo" "SFTP" "Risco,Assincrono"
         nfPdfFile -> imprimeNf "Importação de arquivo" "SFTP" "Risco,Assincrono"
-        imprimeNf -> despachoMercadoria "" "Sincrono"
-        despachoMercadoria -> enviaColeta "" "Sincrono"
+        imprimeNf -> despachoMercadoria "" "" "Sincrono"
+        despachoMercadoria -> enviaColeta "" "" "Sincrono"
         enviaColeta -> coletaFile "Geração de arquivo" "SFTP" "Risco,Assincrono"
         coletaFile -> importaColeta "Importação de arquivo" "SFTP" "Risco,Assincrono"
-        importaColeta -> criaDT "" "Sincrono"
+        importaColeta -> criaDT "" "" "Sincrono"
 
         validaNF -> enviaNFDir "Geração de arquivo" "SFTP" "Risco,Assincrono"
         enviaNFDir -> nfDir  "Envio de arquivo" "SFTP" "Risco,Assincrono"
@@ -172,21 +172,21 @@ workspace "Completo" "Processo B2B" {
 
  //b2c
 
-     compraSite -> geraVenda "" "Sincrono"
-        geraVenda -> geraOV "" "Sincrono"
-        geraOV -> transfMat "" "Sincrono"
+     compraSite -> geraVenda "" "" "Sincrono"
+        geraVenda -> geraOV "" "" "Sincrono"
+        geraOV -> transfMat "" "" "Sincrono"
         
-        transfMat -> alocaMat "" "Sincrono"
-        reservaEstoque -> geraNFTransf "" "Sincrono"
+        transfMat -> alocaMat "" "" "Sincrono"
+        reservaEstoque -> geraNFTransf "" "" "Sincrono"
 
 
 
-        alocaMat -> alocaRuptura "" "Sincrono"
-        alocaRuptura -> geraRemessa "" "Sincrono"
-        geraRemessa -> geraFatura "" "Sincrono"
-        geraFatura -> enviaRemessaNf "" "Sincrono"
-        enviaRemessaNf -> montaPacoteArquivos "" "Sincrono"
-        geraFatura -> validaNF "" "Sincrono"
+        alocaMat -> alocaRuptura "" "" "Sincrono"
+        alocaRuptura -> geraRemessa "" "" "Sincrono"
+        geraRemessa -> geraFatura "" "" "Sincrono"
+        geraFatura -> enviaRemessaNf "" "" "Sincrono"
+        enviaRemessaNf -> montaPacoteArquivos "" "" "Sincrono"
+        geraFatura -> validaNF "" "" "Sincrono"
 
 
 
@@ -207,8 +207,8 @@ workspace "Completo" "Processo B2B" {
         coletaFile -> leituraColeta "Importação de arquivo" "SFTP" "Risco,Assincrono"
 
 
-        expedicao -> coleta "" "Sincrono"
-        leituraColeta -> geraDT "" "Sincrono"
+        expedicao -> coleta "" "" "Sincrono"
+        leituraColeta -> geraDT "" "" "Sincrono"
 
 
 
